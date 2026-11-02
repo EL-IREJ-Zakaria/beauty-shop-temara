@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#faf7f2">
+    <meta name="description" content="Découvrez une sélection de maquillage et de soins chez Beauty Shop Temara. Commandez facilement sur WhatsApp.">
+    <title>Beauty Shop — Révélez votre beauté au quotidien</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://images.unsplash.com">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/products.js" defer></script>
+    <script src="js/brand-image.js" defer></script>
+    <script src="js/cart.js" defer></script>
+    <script src="js/main.js" defer></script>
+  </head>
+  <body>
+    <div class="announcement">
+      <p>Un peu de douceur dans votre routine beauté <span aria-hidden="true">✦</span> Livraison partout au Maroc</p>
+    </div>
+
+    <header class="site-header" id="accueil">
+      <div class="nav-shell">
+        <button class="icon-button menu-toggle" id="menu-toggle" type="button" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="primary-nav">
+          <span></span><span></span>
+        </button>
+        <a class="brand" href="#accueil" aria-label="Beauty Shop, accueil">
+          <span class="brand-mark" aria-hidden="true"><span>b.</span><img class="brand-photo" alt=""></span>
+          <span class="brand-name">beauty <span>shop</span><small>TEMARA · MAROC</small></span>
+        </a>
+        <nav class="primary-nav" id="primary-nav" aria-label="Navigation principale">
+          <a href="#accueil">Accueil</a>
+          <a href="#boutique">Boutique</a>
+          <a href="#categories">Catégories</a>
+          <a href="#apropos">À propos</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <div class="nav-actions">
+          <a class="icon-button instagram-link" href="#" target="_blank" rel="noreferrer" aria-label="Instagram Beauty Shop">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"></rect><circle cx="12" cy="12" r="4"></circle><circle class="icon-fill" cx="18" cy="6" r="1"></circle></svg>
+          </a>
+          <button class="icon-button cart-trigger" id="cart-trigger" type="button" aria-label="Ouvrir le panier">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h14l1 13H4L5 8Z"></path><path d="M9 9V6a3 3 0 0 1 6 0v3"></path></svg>
+            <span class="cart-count" id="cart-count">0</span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-image" role="img" aria-label="Maquillage et produits de beauté aux tons doux"></div>
+        <div class="hero-content">
+          <p class="eyebrow"><span></span> VOTRE RITUEL, VOTRE ÉCLAT</p>
+          <h1 id="hero-title">Révélez votre beauté <em>au quotidien</em></h1>
+          <p class="hero-copy">Des essentiels beauté choisis avec amour, pour vous accompagner dans chaque moment qui vous ressemble.</p>
+          <a class="button button-dark" href="#boutique">Découvrir la collection <span aria-hidden="true">↗</span></a>
+          <div class="hero-note"><span class="note-stars" aria-hidden="true">★★★★★</span><span>La beauté, tout simplement.</span></div>
+        </div>
+        <div class="hero-side-note" aria-hidden="true">BEAUTÉ · SOIN · ÉCLAT</div>
+      </section>
+
+      <section class="benefits" aria-label="Nos engagements">
+        <div><span class="benefit-icon" aria-hidden="true">✧</span><span><strong>Une sélection soignée</strong><small>Des essentiels qui vous ressemblent</small></span></div>
+        <div><span class="benefit-icon" aria-hidden="true">♡</span><span><strong>Commande facile</strong><small>Un échange direct sur WhatsApp</small></span></div>
+        <div><span class="benefit-icon" aria-hidden="true">✦</span><span><strong>Tout près de vous</strong><small>Beauty Shop, à Témara</small></span></div>
+      </section>
+
+      <section class="section collection-section" id="boutique">
+        <div class="section-heading">
+          <div><p class="eyebrow">NOTRE SÉLECTION</p><h2>Les petits favoris</h2></div>
+          <a class="text-link" href="#catalogue">Voir toute la collection <span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="featured-grid" id="featured-products" aria-live="polite"></div>
+      </section>
+
+      <section class="section collection-section compact-collection" id="nouveautes">
+        <div class="section-heading">
+          <div><p class="eyebrow">TOUT JUSTE ARRIVÉS</p><h2>Les nouveautés</h2></div>
+          <a class="text-link" href="#catalogue">Explorer la boutique <span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="featured-grid" id="new-products" aria-live="polite"></div>
+      </section>
+
+      <section class="section collection-section compact-collection" id="promotions">
+        <div class="section-heading">
+          <div><p class="eyebrow">LES JOLIES OCCASIONS</p><h2>Les offres du moment</h2></div>
+          <a class="text-link" href="#catalogue">Voir la sélection <span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="featured-grid" id="sale-products" aria-live="polite"></div>
+      </section>
+
+      <section class="category-band" id="categories">
+        <div class="section category-inner">
+          <div class="category-intro"><p class="eyebrow">TROUVEZ VOTRE BONHEUR</p><h2>La beauté, à votre façon.</h2><p>Une envie de couleur, un moment de soin ou un nouvel essentiel ? Explorez nos univers.</p></div>
+          <div class="category-list">
+            <a href="#catalogue" data-category-link="Maquillage du visage"><span>01</span> Maquillage du visage <span aria-hidden="true">↗</span></a>
+            <a href="#catalogue" data-category-link="Rouge à lèvres et gloss"><span>02</span> Lèvres & gloss <span aria-hidden="true">↗</span></a>
+            <a href="#catalogue" data-category-link="Maquillage des yeux"><span>03</span> Maquillage des yeux <span aria-hidden="true">↗</span></a>
+            <a href="#catalogue" data-category-link="Soins du visage"><span>04</span> Soins du visage <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section catalog-section" id="catalogue">
+        <div class="section-heading catalog-heading">
+          <div><p class="eyebrow">LE SHOP BEAUTÉ</p><h2>À vous de choisir</h2></div>
+          <p class="catalog-subtitle">Les essentiels du quotidien, sélectionnés pour vous.</p>
+        </div>
+        <div class="catalog-controls">
+          <label class="search-box"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.8"></circle><path d="m16 16 5 5"></path></svg><span class="sr-only">Rechercher un produit</span><input id="product-search" type="search" placeholder="Rechercher un produit..." autocomplete="off"></label>
+          <label class="select-wrap"><span class="sr-only">Filtrer par catégorie</span><select id="category-filter"><option value="">Toutes les catégories</option></select></label>
+          <label class="select-wrap"><span class="sr-only">Trier les produits</span><select id="sort-products"><option value="featured">Trier : sélection</option><option value="price-asc">Prix croissant</option><option value="price-desc">Prix décroissant</option><option value="name">Nom A–Z</option></select></label>
+        </div>
+        <div class="active-filters" id="active-filters" aria-live="polite"></div>
+        <div class="product-grid" id="product-grid" aria-live="polite"></div>
+        <p class="empty-state" id="empty-state" hidden>Aucun produit ne correspond à votre recherche. Essayez un autre mot-clé.</p>
+      </section>
+
+      <section class="promo-banner">
+        <div class="promo-image" role="img" aria-label="Soin beauté avec des fleurs fraîches"></div>
+        <div class="promo-copy"><p class="eyebrow">UNE PAUSE RIEN QU’À VOUS</p><h2>Votre routine mérite<br><em>un peu plus d’amour.</em></h2><p>De jolis soins et des attentions beauté pour ralentir, respirer et prendre soin de vous.</p><a class="button button-light" href="#catalogue" data-category-link="Soins du visage">Explorer les soins <span aria-hidden="true">↗</span></a></div>
+        <span class="promo-stamp" aria-hidden="true">PRENDRE<br>SOIN DE<br>SOI ✳</span>
+      </section>
+
+      <section class="section about-section" id="apropos">
+        <div class="about-image"><img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=960&q=85" alt="Portrait lumineux célébrant la beauté naturelle" loading="lazy"></div>
+        <div class="about-copy"><p class="eyebrow">UN MOT DE BEAUTY SHOP</p><h2>La beauté n’a pas de règles. <em>Elle est à vous.</em></h2><p>Beauty Shop, c’est une boutique de proximité à Témara et une jolie sélection de maquillage et de soins à découvrir. Notre envie ? Vous aider à trouver les produits qui vous font du bien, tout simplement.</p><p>Une question ou un coup de cœur ? Écrivez-nous, nous serons ravis de vous répondre.</p><a class="text-link" href="#contact">Faisons connaissance <span aria-hidden="true">↗</span></a></div>
+      </section>
+
+      <section class="instagram-section" id="instagram">
+        <div class="section-heading instagram-heading"><div><p class="eyebrow">UN PEU D’INSPIRATION</p><h2>La beauté au fil de vos envies</h2></div><a class="button button-outline instagram-link" href="#" target="_blank" rel="noreferrer"><span aria-hidden="true">◎</span> Suivez-nous sur Instagram</a></div>
+        <div class="instagram-grid">
+          <a class="instagram-tile" href="#" target="_blank" rel="noreferrer" aria-label="Découvrir Beauty Shop sur Instagram"><img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=520&q=80" alt="Pinceaux et maquillage" loading="lazy"><span aria-hidden="true">◎</span></a>
+          <a class="instagram-tile" href="#" target="_blank" rel="noreferrer" aria-label="Découvrir Beauty Shop sur Instagram"><img src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?auto=format&fit=crop&w=520&q=80" alt="Essentiels de maquillage" loading="lazy"><span aria-hidden="true">◎</span></a>
+          <a class="instagram-tile" href="#" target="_blank" rel="noreferrer" aria-label="Découvrir Beauty Shop sur Instagram"><img src="https://images.unsplash.com/photo-1611930022073-b7a4ba5fcccd?auto=format&fit=crop&w=520&q=80" alt="Produits de soin" loading="lazy"><span aria-hidden="true">◎</span></a>
+          <a class="instagram-tile" href="#" target="_blank" rel="noreferrer" aria-label="Découvrir Beauty Shop sur Instagram"><img src="https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?auto=format&fit=crop&w=520&q=80" alt="Rituel de soin du visage" loading="lazy"><span aria-hidden="true">◎</span></a>
+          <a class="instagram-tile" href="#" target="_blank" rel="noreferrer" aria-label="Découvrir Beauty Shop sur Instagram"><img src="https://images.unsplash.com/photo-1583241800698-e8ab01830a07?auto=format&fit=crop&w=520&q=80" alt="Palette de maquillage" loading="lazy"><span aria-hidden="true">◎</span></a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer" id="contact">
+      <div class="footer-main">
+        <div class="footer-brand"><a class="brand footer-logo" href="#accueil" aria-label="Beauty Shop, accueil"><span class="brand-mark" aria-hidden="true"><span>b.</span><img class="brand-photo" alt=""></span><span class="brand-name">beauty <span>shop</span><small>TEMARA · MAROC</small></span></a><p>Une sélection beauté pensée avec amour, pour révéler ce qui vous rend unique.</p><a class="footer-social instagram-link" href="#" target="_blank" rel="noreferrer"><span aria-hidden="true">◎</span> Instagram</a></div>
+        <div class="footer-column"><h3>Explorer</h3><a href="#accueil">Accueil</a><a href="#boutique">Nos favoris</a><a href="#catalogue">La boutique</a><a href="#apropos">À propos</a></div>
+        <div class="footer-column"><h3>Nos univers</h3><a href="#catalogue" data-category-link="Maquillage du visage">Maquillage du visage</a><a href="#catalogue" data-category-link="Rouge à lèvres et gloss">Lèvres & gloss</a><a href="#catalogue" data-category-link="Maquillage des yeux">Maquillage des yeux</a><a href="#catalogue" data-category-link="Soins du visage">Soins du visage</a></div>
+        <div class="footer-column footer-contact"><h3>On se parle ?</h3><p>Une question, un conseil ou une commande ? Nous sommes à votre écoute.</p><a class="footer-whatsapp" id="footer-whatsapp" href="#" target="_blank" rel="noreferrer"><span aria-hidden="true">↗</span> Écrivez-nous sur WhatsApp</a><small>Témara, Maroc</small></div>
+      </div>
+      <div class="footer-bottom"><span>© <span id="current-year"></span> Beauty Shop. Avec amour, à Témara.</span><span>Maquillage · Soin · Bien-être</span></div>
+    </footer>
+
+    <a class="floating-whatsapp" id="floating-whatsapp" href="#" target="_blank" rel="noreferrer" aria-label="Nous contacter sur WhatsApp"><span aria-hidden="true">☏</span><span class="floating-label">Une question ?</span></a>
+
+    <div class="drawer-backdrop" id="drawer-backdrop" hidden></div>
+    <aside class="cart-drawer" id="cart-drawer" aria-label="Votre panier" aria-hidden="true">
+      <div class="drawer-header"><div><p class="eyebrow">VOTRE SÉLECTION</p><h2>Mon panier <span id="drawer-item-count">(0)</span></h2></div><button class="icon-button close-drawer" id="close-cart" type="button" aria-label="Fermer le panier">×</button></div>
+      <div class="cart-items" id="cart-items"></div>
+      <div class="cart-empty" id="cart-empty"><span aria-hidden="true">♡</span><p>Votre panier attend ses premiers coups de cœur.</p><button class="text-link" id="continue-shopping" type="button">Découvrir la collection <span aria-hidden="true">↗</span></button></div>
+      <div class="drawer-footer" id="drawer-footer"><div class="cart-total"><span>Total estimé</span><strong id="cart-total">0 DH</strong></div><p>La disponibilité et la livraison seront confirmées sur WhatsApp.</p><button class="button button-dark order-cart" id="order-cart" type="button">Commander sur WhatsApp <span aria-hidden="true">↗</span></button></div>
+    </aside>
+
+    <dialog class="product-modal" id="product-modal" aria-labelledby="modal-title">
+      <button class="icon-button modal-close" id="close-modal" type="button" aria-label="Fermer les détails">×</button>
+      <div id="modal-content"></div>
+    </dialog>
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  </body>
+</html>
