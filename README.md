@@ -11,7 +11,7 @@ Ouvrez `index.html` dans un navigateur, ou publiez le dossier sur GitHub Pages, 
 Avant publication, renseignez les coordonnées réelles dans `js/main.js` :
 
 ```js
-const WHATSAPP_NUMBER = "212600000000"; // indicatif pays + numéro, chiffres uniquement
+const WHATSAPP_NUMBER = "212771363091"; // votre numéro marocain au format international
 const INSTAGRAM_URL = "https://www.instagram.com/beauty_shop_sousou/";
 ```
 
